@@ -1,0 +1,7 @@
+
+    set char [format %c $a]
+
+    append output $char
+}
+
+eval $output

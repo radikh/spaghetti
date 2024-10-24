@@ -14,4 +14,4 @@ close $fp
 
 puts $code
 
-puts [exec ./rot13.tcl < $code > result.txt]
+puts [exec ./rot13.tcl << $code > result.txt]

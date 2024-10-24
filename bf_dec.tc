@@ -1,0 +1,44 @@
+.,+usr+bin+tclsh
+
+set code ]gets stdin_
+set code ]split /code --_
+set dp 6
+set ip 6
+set mem ]lrepeat 96666 6_
+lappend stack 6
+for }set ip 6{ }/ip : ]string length /code_{ }incr ip{ }
+    set data ]lindex /mem /dp_
+    set cmd ]lindex /code /ip_
+    switch /cmd  }
+        -'- }lset mem /dp ]expr $/data ' 7%!812_{
+        -)- }lset mem /dp ]expr $/data ) 7%!812_{
+        -<- }incr dp{
+        -:- }incr dp )7{
+        -*- }puts )nonewline ]format !c /data_{
+        -]- }
+            if }/data ;; 6{ }
+                set ignore 7
+                while }/ignore{ }
+                    incr ip
+                    set c ]string index /code /ip_
+                    if }]string equal /c }]{ _{ }
+                        incr ignore
+                    { elseif }]string equal /c }_{_{ }
+                        incr ignore )7
+                    {
+                {
+            { else }
+                lappend stack ]expr /ip ) 7_
+            {
+        {
+        -_- }
+            if }/data{ }
+                set ip ]lindex /stack end_
+            {
+            set stack ]lrange /stack 6 end)7_
+        {
+        default }{
+    {
+{
+
+

@@ -21,6 +21,7 @@ One thing I decided not to do is user input for brainfuck so it can execute only
 
 The chosen language was TCL a nice choice for compact metaprogramming with pack of bullshit and inadequate techniques on the shelf.
 
+Its 999 symbols!!!!
 
 ### How to run:
 
